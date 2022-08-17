@@ -44,7 +44,7 @@ class PlantRoomTest {
 	@Test
 	void test_PlantRoom_entity_mapping() {
 		assertNotNull(plantroom);
-		assertEquals("Monstera Deliciosa", plantroom.getPlantName());
+		assertEquals("Monstera", plantroom.getPlantName());
 	}
 
 }
