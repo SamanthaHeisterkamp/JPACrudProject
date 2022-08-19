@@ -14,6 +14,7 @@ import com.skilldistillery.plantroom.data.PlantRoomDAO;
 import com.skilldistillery.plantroom.entities.PlantRoom;
 
 @Controller
+
 public class PlantRoomController {
 	
 	
@@ -28,7 +29,7 @@ public class PlantRoomController {
 	
 	
 	@RequestMapping(path = "getPlant.do")
-	public String showPlant(Integer id, Model model) {
+	public String showPlant(int id, Model model) {
 		PlantRoom plant = dao.findById(id);
 		model.addAttribute("plant", plant);
 		return "plant/show";
